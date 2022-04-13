@@ -1,13 +1,53 @@
-body {
+*, :before, :after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
+.table{
+  max-width: 1000px;
+  min-width: 700px;
+  width: 100%;
+  overflow: auto;
+}
+
+
+td.MuiTableCell-alignLeft, th.MuiTableCell-body{
+  width: 20%;
+  word-break: break-all;
+}
+.table{
+  border: 1px solid #ccc;
+}
+.table > thead {
+  background-color: rgba(0,0,0,0.8)
+}
+.table > thead > tr > th{
+  color: white;
+}
+.table > tbody > tr.MuiTableRow-root:nth-child(even){
+  background-color: rgba(177, 177, 177, 1);
+}
+
+.table > tbody > tr.MuiTableRow-root:nth-child(even){
+  background-color: rgba(0,0,0,0.15)
+}
+
+
+
